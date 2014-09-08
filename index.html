@@ -4,19 +4,32 @@
 		margin:0 auto;
 		background-position: center;
 	}
+	.left {
+		width: 300px
+	}
+	.top {
+		width: 100%;
+		height: 65px;
+		background: gray;
+	}
 </style>
 <html>
 	<head>
 		<title>Revista Las Glorietas</title>
 	</head>
 <body>
-	<object style="margin:5px" width="320" height="150">
-		<param name="movie" value="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8"></param>
-		<param name="allowFullScreen" value="true">
-			<param name="wmode" value="transparent"></param>
-		</param>
-		<param name="allowscriptaccess" value="always"></param>
-		<embed src="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8" type="application/x-shockwave-flash" width="320" height="150" allowscriptaccess="always" wmode="transparent" allowfullscreen="true"></embed>
-	</object>
+	<div class="top">
+		<img src="img/icon.png" width="75" />
+	</div>
+	<div class="left">
+		<object style="position:absolute;right:5px;bottom:5px" width="320" height="150">
+			<param name="movie" value="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8"></param>
+			<param name="allowFullScreen" value="true">
+				<param name="wmode" value="transparent"></param>
+			</param>
+			<param name="allowscriptaccess" value="always"></param>
+			<embed src="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8" type="application/x-shockwave-flash" width="320" height="150" allowscriptaccess="always" wmode="transparent" allowfullscreen="true"></embed>
+		</object>
+	</div>
 </body>
 </html>
