@@ -230,9 +230,11 @@ margin-top:430px;
 			<kbd class="light" id="one" style="padding:3px 6px;border-radius:3px;font-size:30px;cursor:pointer" onClick="kk()">◄</kbd>
 			<kbd class="light" id="two" style="padding:3px 6px;border-radius:3px;font-size:30px;cursor:pointer" onClick="jj()">►</kbd>
 		</div>
-		<h2 style="display:inline-block; margin-left:35px;font-family:calibri;color:white;text-shadow:1px 1px 1px black">
-		¡Estamos preparando para ti mucho mas contenido!
-		</h2>
+		<center>
+			<h2 style="display:inline-block;font-family:calibri;color:white;text-shadow:1px 1px 1px black">
+				¡Estamos preparando para ti mucho mas contenido!
+			</h2>
+		</center>
 	</div>
 <div class="everything">
 <div class="left">
@@ -256,21 +258,31 @@ margin-top:430px;
 		<h4 style="margin-left:10px">¿Quieres Anunciarte? <br/>
 		<big>Llámanos 3315121240<big></h4>
 	</div>
-		<object style="position:absolute;right:5px;bottom:5px" width="320" height="150">
-			<param name="movie" value="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8"></param>
-			<param name="allowFullScreen" value="true">
-				<param name="wmode" value="transparent"></param>
-			</param>
-			<param name="allowscriptaccess" value="always"></param>
-			<embed src="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8" type="application/x-shockwave-flash" width="320" height="150" allowscriptaccess="always" wmode="transparent" allowfullscreen="true"></embed>
-		</object>
-
+	<div id="cocaRadio" style="position:absolute;right:5px;bottom:5px">
+		<strong  style="margin-top:-35px;position:absolute;text-shadow:0px 0px 3px red;text-align:center">Enciende la Radio</strong>
+		<img src="http://png.findicons.com/files/icons/997/vista_style/128/headphones.png" style="margin:10px;" />
+	</div>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-540d4fda55a197ef"></script>
 
 <script type="text/javascript">
 
+	
+	
+		
 
 	$(window).ready(function() {
+	
+		$("#cocaRadio").click(function(){
+				$(this).html('<object width="320" height="150">'+
+							'<param name="movie" value="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8"></param>'+
+			'<param name="allowFullScreen" value="true">'+
+				'<param name="wmode" value="transparent"></param>'+
+			'</param>'+
+			'<param name="allowscriptaccess" value="always"></param>'+
+			'<embed src="http://www.imusicaradios.com/ccfm/ccfmplayer.swf?config=http%3A%2F%2Fwww.imusicaradios.com%2Fccfm%2Fmx%2Fjsonconfig.txt&isembed=1&build=4.8" type="application/x-shockwave-flash" width="320" height="150" allowscriptaccess="always" wmode="transparent" allowfullscreen="true"></embed>'+
+		'</object>');
+		});
+		
 		$("#zoom").click(function(){
 			$("#revistin div").css('backgroundSize','480px 620px');
 			$("#revistin").turn('zoom',1.3);
