@@ -4,7 +4,9 @@
 		background-size: cover;
 		margin:0 auto;
 		background-position: center;
+		overflow: hidden;
 	}
+
 	.left {
 		width: 300px
 	}
@@ -204,6 +206,27 @@ margin-top:430px;
 	-webkit-transform:translateX(-50%);
 
 }
+footer {
+	position: absolute;
+	width: 100%;
+	height:35px;
+	background-color: #7a90c0; 
+	display: none;
+}
+.derecha, .izquierda {
+	position: absolute;
+	top:35%;
+	background-color: white;
+	opacity: .7;
+	width: 35px;
+	height: 250px;
+}
+.derecha {
+	right: 0;
+}
+.izquierda {
+	left:0;
+}
 </style>
 <html>
 	<head>
@@ -223,18 +246,12 @@ margin-top:430px;
 	</script>
 	</head>
 <body>
+	<div class="derecha" id="two" onclick="jj()"></div>
+	<div class="izquierda" id="one" onclick="kk()"></div>
 	<div class="top">
 		<img src="img/icon.png" width="75" />
 	</div>
-	<div style="position:absolute;left:150px;top:5px;">
-		<div class="c8">
-			<kbd class="light" id="one" style="padding:3px 6px;border-radius:3px;font-size:30px;cursor:pointer" onClick="kk()">◄</kbd>
-			<kbd class="light" id="two" style="padding:3px 6px;border-radius:3px;font-size:30px;cursor:pointer" onClick="jj()">►</kbd>
-		</div>
 		
-			<h2 style="display:inline-block;text-align:center;font-family:calibri;color:white;text-shadow:1px 1px 1px black">
-			¡Revista digital Las Glorietas!
-			</h2>
 		
 	</div>
 <div class="everything">
@@ -259,6 +276,8 @@ margin-top:430px;
 		<h4 style="margin-left:10px">¿Quieres Anunciarte? <br/>
 		<big>Llámanos 3315121240<big></h4>
 	</div> 
+
+	<footer></footer>
 
 
 <script type="text/javascript">
