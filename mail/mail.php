@@ -1,8 +1,3 @@
-<?php
-
-if(!$_POST){	$_POST["name"] = "Test User"; $_POST["gender"] = "o";	}
-
-$pagina = <<<EOPAGE
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -48,13 +43,7 @@ ol,.one-col-feature ul{line-height:22px}.two-col p,.two-col ol,.two-col ul{line-
                                 <tbody><tr>
                                   <td class="padded" style="padding: 0;vertical-align: top;padding-left: 40px;padding-right: 40px;text-align: left">
                                     
-            <h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 26px;Margin-bottom: 12px;line-height: 36px">
-            Que tal $_POST[name], &#191;Estas list$_POST[gender] para aumentar tus ventas&#63; </h1>
-            <p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-bottom: 10px;line-height: 22px">
-           	Queremos invitarte a formar parte de la mejor revista publicitaria. </p>
-            <p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-bottom: 20px;line-height: 22px">
-            La revista <strong style="font-weight: bold">Las Glorietas</strong>, te ofrece la oportunidad de darte a conocer a traves de 2000 ejemplares mensuales, 
-            perfectamente distribuidos en casas, cotos, empresas y negocios de Ciudad Granja.</p>
+            <h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 26px;Margin-bottom: 12px;line-height: 36px">Quieres aumentar tus ventas?<?php echo $_POST["name"]; ?>  </h1><p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-bottom: 10px;line-height: 22px">Pshh siih tatta hash chaka chakan tururuPshh siih tatta hash chaka chakan tururuPshh siih tatta hash chaka chakan tururu</p><p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-bottom: 20px;line-height: 22px">psst chh ta ta tum <strong style="font-weight: bold">Nanani Nanana</strong> button below.</p>
           
                                   </td>
                                 </tr>
@@ -87,12 +76,8 @@ ol,.one-col-feature ul{line-height:22px}.two-col p,.two-col ol,.two-col ul{line-
                                 <tbody><tr>
                                   <td class="padded" style="padding: 0;vertical-align: top;padding-left: 40px;padding-right: 40px;text-align: left">
                                     
-            <h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 22px;Margin-bottom: 12px;line-height: 30px">Precios Accesibles</h1>
-            <p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;line-height: 21px;Margin-bottom: 20px">
-            No hay pretexto para mejorar tu presencia y sobre todo tus ventas, <strong>Las Glorietas</strong> tiene el espacio indicado para tus necesidades. <br/>
-            Asi es, anunciate desde <b><i>$150.00</i></b> al mes. <br /> &#191;Que esperas&#63; Contactanos ya. <br /><br />
-          
-           <a href="https://apps.facebook.com/lasglorietas/"> <button style="cursor:pointer;padding:10px;background-color:#fabb1b;color:white;border:0px solid red"> <img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/forward-dark.png" alt="" width="13" height="10"> Visitar revista del mes </button></a> </p>
+            <h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 22px;Margin-bottom: 12px;line-height: 30px">Social Media</h1><p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;line-height: 21px;Margin-bottom: 20px">Fusce a aliquam justo. Curabitur sed augue convallis, sodales sem a, hendrerit ipsumFusce a aliquam justo. Curabitur sed augue convallis, sodales sem a, hendrerit ipsumFusce a aliquam justo. <br /><br />
+           <a href="#"> <button style="cursor:pointer;padding:10px;background-color:#89c52c;color:white;border:0px solid red"> <img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/forward-dark.png" alt="" width="13" height="10"> Ver Precios </button></a> </p>
           
                                   </td>
                                 </tr>
@@ -114,10 +99,8 @@ ol,.one-col-feature ul{line-height:22px}.two-col p,.two-col ol,.two-col ul{line-
                                   <td class="padded" style="padding: 0;vertical-align: top;padding-left: 20px;padding-right: 20px;text-align: left">
                                     
             
-<h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 20px;Margin-bottom: 14px;line-height: 30px">Beneficios</h1>
-<ul style="Margin-top: 0;padding-left: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-left: 18px;line-height: 21px;Margin-bottom: 20px">
-<li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Cupones de Descuento.</li><li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: 
-url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Social Media.</li><li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Reparto consciente y personalizado.</li></ul>
+<h1 style="Margin-top: 0;font-weight: normal;color: #58595b;font-family: Georgia,serif;font-size: 20px;Margin-bottom: 14px;line-height: 30px">Cupones Promocionales</h1><p style="Margin-top: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;line-height: 21px;Margin-bottom: 21px">Nanani Nanana.</p><ul style="Margin-top: 0;padding-left: 0;font-weight: normal;color: #808285;font-family: sans-serif;font-size: 14px;Margin-left: 18px;line-height: 21px;Margin-bottom: 20px"><li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Nanani Nanana.</li><li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: 
+url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Nanani Nanana.</li><li style="Margin-top: 0;padding-left: 12px;list-style-type: circle;list-style-position: outside;list-style-image: url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin-bottom: 10px">Nanani Nanana.</li></ul>
           
                                   </td>
                                 </tr>
@@ -145,24 +128,32 @@ url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin
                 <td class="campaign" style="padding: 0;vertical-align: top;text-align: left;color: #9a9c9e;font-family: sans-serif;font-size: 12px;line-height: 20px">
                   
                   
-                  <div style="display:block; color:gray">
+                  <div style="display:block">
                     <span>
                       <span class="block">
-                 <b>Revista Las Glorietas</b> <br />
-                 <img src="images/icono-telefono.png" style="vertical-align: middle" width="20" /> <span > (044) 3315121240</span>
+                        <preferences>
+                          Preferences
+                        </preferences>
+                        <span class="hide"> &nbsp;|&nbsp; </span>
+                      </span>
+                    </span>
+                    <span class="block">
+                      <unsubscribe>
+                        Unsubscribe
+                      </unsubscribe>
                     </span>
                   </div>
                 </td>
                 <td class="social" style="padding: 0;vertical-align: top;color: #9a9c9e;text-align: left;font-family: sans-serif;text-transform: uppercase;width: 190px">
                   <div class="padded" style="padding-left: 40px;padding-right: 40px;Margin-left: 20px;padding: 0">
                     <div style="Margin-bottom: 10px">
-                      <a href="https://www.facebook.com/lasglorietasdeciudadgranja"><fblike><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/facebook-dark.png" alt="" width="38" height="30" /><span>Like</span></fblike></a>
+                      <a href="#"><fblike><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/facebook-dark.png" alt="" width="38" height="30" /><span>Like</span></fblike></a>
                     </div>
                     <div style="Margin-bottom: 10px">
-                      <a href="https://twitter.com/lasglorietasdcg"><tweet><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/twitter-dark.png" alt="" width="38" height="30" /><span>Tweet</span></tweet></a>
+                      <a href="#"><tweet><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/twitter-dark.png" alt="" width="38" height="30" /><span>Tweet</span></tweet></a>
                     </div>
-                    <div style="Margin-bottom: 10px; display:none">
-                      <a href="*|FORWARD|*"><forwardtoafriend><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/forward-dark.png" alt="" width="38" height="30" /><span>Reenviar</span></forwardtoafriend></a>
+                    <div style="Margin-bottom: 10px">
+                      <a href="#"><forwardtoafriend><img style="border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle" src="images/forward-dark.png" alt="" width="38" height="30" /><span>Reenviar</span></forwardtoafriend></a>
                     </div>
                   </div>
                 </td>
@@ -175,40 +166,3 @@ url(https://i9.createsend1.com/static/eb/master/10-hue/images/bullet.png);Margin
     </center>
   
 </body></html>
-EOPAGE;
-
-require_once('class.phpmailer.php');
-include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
-
-$mail = new PHPMailer();
-echo $pagina;
-
-if($_POST["subject"])
-{
-	echo "\n\n\n\nprkjkcsjdnkcjnsdkcnjsdkjcnsdkjcnskdjcn\n\n\n\n";
-		$body = $pagina;
-		$name = $_POST["name"];
-		$subject = $_POST["subject"];
-	    $mail->IsSMTP();
-	    $mail->SMTPAuth   = true;
-	    $mail->Host       = "smtpout.secureserver.net";
-	    $mail->Port       = 3535;
-	    $mail->Username   = "webmaster@ciudadgranja.com";
-	    $mail->Password   = "fosforo";
-	    $mail->From       = "webmaster@ciudadgranja.com";
-	    $mail->FromName   = "Revista Las Glorietas";
-	    $mail->AddReplyTo("webmaster@ciudadgranja.com","Revista Las Glorietas");
-	    $mail->Subject    = $name . $subject;
-	    $mail->MsgHTML($body);
-	    $address = $_POST["email"];
-	    $mail->AddAddress($address, $name);
-	    
-	    if(!$mail->Send()) {
-	      echo "Mailer Error: " . $mail->ErrorInfo;
-	    } else {
-	      echo "Message sent!";
-	      echo $pagina;
-	    }
-}    
-
-?>

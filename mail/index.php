@@ -21,6 +21,8 @@
 		</nav>
 		<div class="container">
 			<form method="post" action="sender.php">
+				<input type="hidden" name="subject" value=" &#191;Quieres aumentar tus ventas&#63;" />
+
 				<ul>
 					<li>
 						<div class="input-group">
@@ -33,12 +35,28 @@
 							<span class="input-group-addon">Email: </span>
 							<input type="email" class="form-control" name="email" placeholder="Escribe un Mail" required>
 						</div>
+					</li>	
+					<li>
+						<div class="container">
+							<label>Genero</label>
+							<ul>
+								<li>
+									<label>Femenino</label>
+									<input type="radio" name="gender" value="a" required/>
+								</li>
+								<li>
+									<label>Masculino</label>
+									<input type="radio" name="gender" value="o" required/>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li>
 						<div class="container">
 							<button class="btn btn-success" type="submit">Enviar</button>
 						</div>
 					</li>
+
 				</ul>
 			</form>
 		</div>
